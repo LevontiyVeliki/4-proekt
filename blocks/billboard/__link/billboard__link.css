@@ -1,0 +1,55 @@
+.billboard__link {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: calc(31.25% - 125px) 0;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.4s ease 0s;
+  background: url(../../../images/cover-trains.jpg) center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .billboard__link {
+    padding: calc(31.25% - 102px) 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .billboard__link {
+    padding: calc(31.25% - 71px) 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .billboard__link {
+    padding: calc(31.25% - 67px) 15px;
+  }
+}
+
+.billboard__link::before {
+  content: "";
+  position: absolute;
+  background: #2a2c2f center no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: all 0.4s ease 0s;
+}
+
+.billboard__link:hover::before {
+  opacity: 0.8;
+}

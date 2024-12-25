@@ -1,0 +1,4 @@
+.page__header {
+  grid-area: header;
+  grid-column: 1/2;
+}

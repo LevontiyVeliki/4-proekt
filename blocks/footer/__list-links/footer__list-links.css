@@ -1,0 +1,21 @@
+.footer__list-links {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+@media (max-width: 540px) {
+  .footer__list-links {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    line-height: 1;
+    row-gap: 29px;
+    font-size: 24px;
+  }
+}

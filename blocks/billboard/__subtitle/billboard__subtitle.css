@@ -1,0 +1,23 @@
+.billboard__subtitle {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  max-width: 370px;
+}
+
+@media (max-width: 540px) {
+  .billboard__subtitle {
+    width: 85%;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media (max-width: 420px) {
+  .billboard__subtitle {
+    width: 100%;
+  }
+}

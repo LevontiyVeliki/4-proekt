@@ -1,0 +1,4 @@
+.page__main {
+  grid-area: main;
+  grid-column: 1/2;
+}
